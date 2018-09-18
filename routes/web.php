@@ -30,5 +30,8 @@ Route::post('/post', function () {
     $content = request('message');
     $message->content = $content;
     $message->save();
+
+    event(new MessageSent($content));
+
     return $content;
 });

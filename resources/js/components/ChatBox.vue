@@ -31,6 +31,11 @@
             axios.get('/getAll').then(({data}) => {
                 this.messages = data;
             });
+
+             // Registered client on public channel to listen to MessageSent event
+            Echo.channel('public').listen('MessageSent', ({message}) => {
+                this.messages.push(message);
+    });
         }
     }
 </script>
