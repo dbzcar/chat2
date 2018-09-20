@@ -13966,12 +13966,16 @@ if (token) {
  */
 
 
+//import io from 'socket.io-client'
+
+//window.io = io
 
 // window.Pusher = require('pusher-js');
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'socket.io',
   host: window.location.hostname + ':6001'
+  //host:'http://chat2.test:6001'
   //     key: process.env.MIX_PUSHER_APP_KEY,
   //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
   //     encrypted: true

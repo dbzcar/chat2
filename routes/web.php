@@ -12,6 +12,7 @@
 */
 
 use App\Message;
+use App\Events\MessageSent;
 
 // Return index page with the Vue component we will crete soon
 Route::get('/', function () {
