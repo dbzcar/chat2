@@ -48355,7 +48355,7 @@ var render = function() {
     "div",
     [
       _vm._l(_vm.messages, function(message) {
-        return _c("p", [_vm._v(_vm._s(message))])
+        return _c("p", { key: message.id }, [_vm._v(_vm._s(message))])
       }),
       _vm._v(" "),
       _c("input", {

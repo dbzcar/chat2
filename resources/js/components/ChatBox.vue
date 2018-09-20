@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p v-for="message in messages">{{message}}</p>
+        <p v-for="message in messages" :key="message.id">{{message}}</p>
         <input v-model="text">
         <button @click="postMessage" :disabled="!contentExists">submit</button>
     </div>
